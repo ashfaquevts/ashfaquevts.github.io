@@ -1,0 +1,10 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top stripe: Black -->
+  <rect width="600" height="100" y="0" fill="#000000"/>
+  <!-- Middle stripe: White -->
+  <rect width="600" height="100" y="100" fill="#FFFFFF"/>
+  <!-- Bottom stripe: Green -->
+  <rect width="600" height="100" y="200" fill="#007A3D"/>
+  <!-- Red triangle on the hoist side -->
+  <polygon points="0,0 0,300 150,150" fill="#CE1126"/>
+</svg>

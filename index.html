@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Abir</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!-- Primary Meta Tag -->
+    <meta name="title" content="A.H. Abir | The Tech Expert">
+    <meta name="description" content="I'm Ashfaque Hossain Abir, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!">
+
+    <!-- Open Graph/Facebook -->
+    <meta property="og:image" content="./images/preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ashfaquevts.github.io/"/>
+    <meta property="og:title" content="A.H. Abir | The Tech Expert" />
+    <meta property="og:description" content="I'm Ashfaque Hossain Abir, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. Hire me now!"/>
+
+    <!-- JQuery Source -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/on-scroll-reveal.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/preloader.css"/>
+</head>
+<body class="light-theme">
+    <!--====================================================
+    ---- Preloader
+    =====================================================-->
+
+    <div id="preloader">
+        <div class="outer">
+        <!-- Google Chrome -->
+        <div class="infinityChrome">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Safari and others -->
+        <div class="infinity">
+            <div>
+            <span></span>
+            </div>
+            <div>
+            <span></span>
+            </div>
+            <div>
+            <span></span>
+            </div>
+        </div>
+        <!-- Stuff -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
+            <defs>
+            <filter id="goo">
+                <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="6"
+                result="blur"
+                />
+                <feColorMatrix
+                in="blur"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                result="goo"
+                />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+            </defs>
+        </svg>
+        </div>
+    </div>
+
+
+    <!--====================================================
+    ---- Header Section
+    =====================================================-->
+
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Logo Image -->
+
+                <!-- <a href="#">
+                    <img class="logo-light" src="./images/logo-light.svg" alt="logo-light"/>
+                    <img class="logo-dark" src="./images/logo-dark.svg" alt="logo-dark"/>
+                </a> -->
+
+                <a href="#">
+                    <div class="logo">
+                        <img  width="56" height="28" src="./images/logo/palestine.svg" alt="palestine-flag"/>
+                        <!-- <h1 class="brand-logo gradient-text">&lt; Abir /&gt;</h1> -->
+                        <h1 class="brand-logo gradient-text">A.H. Abir</h1>
+                    </div>
+                </a>
+
+                <div class="menu-section">
+                    <!-- Nav Menu -->
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="https://ashfaquehossainabir.github.io/devblog-homepage/">blogs</a></li>
+                        <li><a href="https://ashfaquehossainabir.github.io/contact-me/">contact</a></li>
+                    </ul>
+
+                    <div class="nav-btn">
+                        <!-- Light/Dark Icon Button -->
+                        <button class="theme-btn">
+                            <img class="light-icon" src="./images/light-icon.svg" alt="light-icon">
+                            <img class="dark-icon" src="./images/dark-icon.svg" alt="dark-icon">
+                        </button>
+
+                        <!-- Nav Button -->
+                        <button onclick="location.href='https://github.com/ashfaquehossainabir?tab=repositories'" class="project-btn">My Projects</button>
+                    </div>
+
+                    <!-- Mobile Nav Menu Button -->
+                    <button class="nav-menu-btn" onclick="navToggleFunc()">
+                        <!-- Bar Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="mobile-nav-menu">
+            <!-- Close Icon -->
+            <button class="nav-close-btn" onclick="navToggleFunc()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
+                </svg>
+            </button>
+
+            <!-- Logo Image -->
+            <img class="logo-light" src="./images/logo-light.svg" alt="logo-light"/>
+            <img class="logo-dark" src="./images/logo-dark.svg" alt="logo-dark"/>
+
+            <!-- Menu List -->
+            <ul>
+                <li onclick="navToggleFunc()"><a href="#home">home</a></li>
+                <li onclick="navToggleFunc()"><a href="#about">about</a></li>
+                <li onclick="navToggleFunc()"><a href="#services">services</a></li>
+                <li onclick="navToggleFunc()"><a href="https://ashfaquehossainabir.github.io/devblog-homepage/">blogs</a></li>
+                <li onclick="navToggleFunc()"><a href="https://ashfaquehossainabir.github.io/contact-me/">contact</a></li>
+            </ul>
+
+            <!-- Light/Dark Icon Button -->
+            <div class="mobile-theme-btn">
+                <p>
+                    Switch Theme
+                </p>
+
+                <button class="theme-btn">
+                    <img class="light-icon" src="./images/light-icon.svg" alt="light-icon">
+                    <img class="dark-icon" src="./images/dark-icon.svg" alt="dark-icon">
+                </button>
+            </div>
+
+            <!-- Project Button -->
+            <button onclick="location.href='https://github.com/ashfaquehossainabir?tab=repositories'" class="project-btn">My Projects</button>
+        </div>
+    </header>
+
+    <!--====================================================
+    ---- Hero Section
+    =====================================================-->
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="left">
+                <div class="mobile-hero-image">
+                    <!-- Hero Image -->
+                    <img src="./images/author-image.jpg" class="hero-image" alt="hero-image"/>
+
+                    <!-- Hero Image Shadow -->
+                    <svg width="280" height="320" viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="280" height="320" fill="#E5E7EB"/>
+                    </svg>
+                </div>
+
+                <div class="hero-contents">
+                    <h1>
+                        Hi, I’m Abir <span class="waving-hand">👋</span>
+                    </h1>
+
+                    <p class="for-palestine">Supporter of peace (Free Palestine)</p>
+
+                    <p data-reveal="top" data-reveal-delay="0.20s">
+                        I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) 
+                        exceptional digital experiences that are fast, accessible, visually appealing, and responsive. 
+                        Even though I have been creating web applications for over 4 years, I still love it as if it was 
+                        something new.
+                    </p>
+                </div>
+    
+                <div class="hero-info">
+                    <div class="hero-location" data-reveal="top" data-reveal-delay="0.30s">
+                        <!-- Location Icon -->
+                        <img src="./images/location-icon.svg" alt="location-icon"/>
+    
+                        <p>
+                            Dhaka, Bangladesh
+                        </p>
+                    </div>
+
+                    <div class="hero-availability" data-reveal="top" data-reveal-delay="0.40s">
+                        <!-- Green Dot Icon Image -->
+                        <!-- <img src="./images/green-dot-icon.svg" class="green-dot-icon" alt="green-dot-icon"/> -->
+
+                        <!-- Dot Icon -->
+                        <div class="dot"></div>
+
+                        <p id="availability-status">
+                            <!-- Availability Text will inject from script.js -->
+                        </p>
+                    </div>
+
+                    <div class="hero-icons" data-reveal="top" data-reveal-delay="0.50s">
+                        <!-- Github Icon -->
+                        <a href="https://github.com/ashfaquehossainabir" target="_blank">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 28V24C21.1392 22.7473 20.78 21.4901 20 20.5C23 20.5 26 18.5 26 15C26.08 13.75 25.73 12.52 25 11.5C25.28 10.35 25.28 9.15 25 8C25 8 24 8 22 9.5C19.36 9 16.64 9 14 9.5C12 8 11 8 11 8C10.7 9.15 10.7 10.35 11 11.5C10.2719 12.5159 9.91851 13.7528 10 15C10 18.5 13 20.5 16 20.5C15.61 20.99 15.32 21.55 15.15 22.15C14.98 22.75 14.93 23.38 15 24V28" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 24C10.49 26 10 22 8 22" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+    
+                        <!-- Twitter Icon -->
+                        <a href="https://x.com/Ashfaquertc70" target="_blank">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 10C28 10 27.3 12.1 26 13.4C27.6 23.4 16.6 30.7 8 25C10.2 25.1 12.4 24.4 14 23C9 21.5 6.5 15.6 9 11C11.2 13.6 14.6 15.1 18 15C17.1 10.8 22 8.4 25 11.2C26.1 11.2 28 10 28 10Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+    
+                        <!-- Figma Icon -->
+                        <a href="https://www.figma.com/@ashfaquehossain" target="_blank">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 11.5C11 10.5717 11.3687 9.6815 12.0251 9.02513C12.6815 8.36875 13.5717 8 14.5 8H18V15H14.5C13.5717 15 12.6815 14.6313 12.0251 13.9749C11.3687 13.3185 11 12.4283 11 11.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 8H21.5C21.9596 8 22.4148 8.09053 22.8394 8.26642C23.264 8.44231 23.6499 8.70012 23.9749 9.02513C24.2999 9.35013 24.5577 9.73597 24.7336 10.1606C24.9095 10.5852 25 11.0404 25 11.5C25 11.9596 24.9095 12.4148 24.7336 12.8394C24.5577 13.264 24.2999 13.6499 23.9749 13.9749C23.6499 14.2999 23.264 14.5577 22.8394 14.7336C22.4148 14.9095 21.9596 15 21.5 15H18V8Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 18.5C18 18.0404 18.0905 17.5852 18.2664 17.1606C18.4423 16.736 18.7001 16.3501 19.0251 16.0251C19.3501 15.7001 19.736 15.4423 20.1606 15.2664C20.5852 15.0905 21.0404 15 21.5 15C21.9596 15 22.4148 15.0905 22.8394 15.2664C23.264 15.4423 23.6499 15.7001 23.9749 16.0251C24.2999 16.3501 24.5577 16.736 24.7336 17.1606C24.9095 17.5852 25 18.0404 25 18.5C25 18.9596 24.9095 19.4148 24.7336 19.8394C24.5577 20.264 24.2999 20.6499 23.9749 20.9749C23.6499 21.2999 23.264 21.5577 22.8394 21.7336C22.4148 21.9095 21.9596 22 21.5 22C21.0404 22 20.5852 21.9095 20.1606 21.7336C19.736 21.5577 19.3501 21.2999 19.0251 20.9749C18.7001 20.6499 18.4423 20.264 18.2664 19.8394C18.0905 19.4148 18 18.9596 18 18.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11 25.5C11 24.5717 11.3687 23.6815 12.0251 23.0251C12.6815 22.3687 13.5717 22 14.5 22H18V25.5C18 26.4283 17.6313 27.3185 16.9749 27.9749C16.3185 28.6313 15.4283 29 14.5 29C13.5717 29 12.6815 28.6313 12.0251 27.9749C11.3687 27.3185 11 26.4283 11 25.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11 18.5C11 17.5717 11.3687 16.6815 12.0251 16.0251C12.6815 15.3687 13.5717 15 14.5 15H18V22H14.5C13.5717 22 12.6815 21.6313 12.0251 20.9749C11.3687 20.3185 11 19.4283 11 18.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <!-- Hero Image -->
+                <img src="./images/author-image.jpg" class="hero-image" alt="hero-image"/>
+
+                <!-- Hero Image Shadow -->
+                <svg width="280" height="320" viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="280" height="320" fill="#E5E7EB"/>
+                </svg>              
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+    ---- About Section
+    =====================================================-->
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <!-- Section Badge -->
+                <p class="badge">
+                    About Me
+                </p>
+            </div>
+
+            <!-- About Contents -->
+            <div class="contents">
+
+                <div class="left">
+                    <!-- About Image -->
+                    <img src="./images/author-image-2.jpg" class="about-image" alt="about-image"/>
+
+                    <!-- About Image Shadow -->
+                    <svg width="400" height="480" viewBox="0 0 400 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="480" fill="#E5E7EB"/>
+                    </svg>
+                </div>
+
+                <div class="mobile-hero-image">
+                    <!-- Hero Image -->
+                    <img src="./images/author-image-2.jpg" class="about-mobile-image" alt="about-image"/>
+
+                    <!-- Hero Image Shadow -->
+                    <svg width="280" height="320" viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="280" height="320" fill="#E5E7EB"/>
+                    </svg>
+                </div>
+
+                <div class="right">
+                    <h2 data-reveal="top">Curious about me? Here you have it:</h2>
+
+                    <p data-reveal="top" data-reveal-delay="0.10s">
+                        I am passionate about coding, solving problems, and building innovative projects. With a love 
+                        for continuous learning and exploration, I enjoy reading books and engaging in various exciting 
+                        activities. I believe that knowledge has no limits, and constantly seeking opportunities to 
+                        expand my skills and contribute to meaningful projects.
+                    </p>
+
+                    <p data-reveal="top" data-reveal-delay="0.20s">
+                        I'm a passionate, self-proclaimed designer who specializes in full stack development 
+                        (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects 
+                        of digital products to life. User experience, pixel perfect design, and writing clear, readable, 
+                        highly performant code matters to me.
+                    </p>
+
+                    <p data-reveal="top" data-reveal-delay="0.30s">
+                        You can follow me on Twitter where I share tech-related bites and build in public, or you can 
+                        follow me on 
+                        <a href="https://github.com/ashfaquehossainabir" target="_blank" class="text-link">
+                            GitHub
+                        </a>.
+                    </p>
+
+                    <p data-reveal="top" data-reveal-delay="0.40s">Age: <span id="age"></span> Years</p>
+
+                    <p data-reveal="top" data-reveal-delay="0.50s">
+                        Country: 
+
+                        <!-- Bangladesh Flag SVG -->
+                        <svg style="display: inline-block" xmlns="http://www.w3.org/2000/svg" width="16pt" height="10pt" viewBox="0 0 16 10">
+                          <g id="surface1">
+                            <rect x="0" y="0" width="16" height="10" style="fill: rgb(0%, 41.568627%, 30.588235%);fill-opacity: 1;stroke: none;"></rect>
+                            <path style="stroke: none;fill-rule: nonzero;fill: rgb(95.686275%,16.470588%,25.490196%);fill-opacity: 1;" d="M 10.398438 5 C 10.398438 6.839844 8.96875 8.332031 7.199219 8.332031 C 5.433594 8.332031 4 6.839844 4 5 C 4 3.160156 5.433594 1.667969 7.199219 1.667969 C 8.96875 1.667969 10.398438 3.160156 10.398438 5 Z M 10.398438 5 "></path>
+                          </g>
+                        </svg> 
+
+                        Bangladesh
+                    </p>
+                    
+                    <p data-reveal="top" data-reveal-delay="0.55s">
+                        Freelance: <span class="active-status"></span> <span class="availability-status"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+    ---- Skills Section
+    =====================================================-->
+
+    <section class="skill-section">
+        <div class="container">
+            <div class="section-title">
+                <!-- Section Badge -->
+                <p class="badge">
+                    Skills
+                </p>
+
+                <!-- Section Subtitle -->
+                <p class="subtitle">
+                    The skills, tools and technologies I am really good at:
+                </p>
+            </div>
+
+            <!-- Skill Icons Container -->
+            <div class="skill-icons">
+
+                <!-- Javascript Icon -->
+                <div class="skill-icon" data-reveal="bottom">
+                    <img src="./images/skill-icons/icon-javscript.svg" alt="javascript-icon"/>
+                    <p>Javascript</p>
+                </div>
+
+                <!-- Typescript Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.10s">
+                    <img src="./images/skill-icons/icon-typescript.svg" alt="typescript-icon"/>
+                    <p>Typescript</p>
+                </div>
+
+                <!-- React Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.15s">
+                    <img src="./images/skill-icons/icon-react.svg" alt="react-icon"/>
+                    <p>React</p>
+                </div>
+
+                <!-- Next.js Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.20s">
+                    <img src="./images/skill-icons/icon-nextjs.svg" alt="nextjs-icon"/>
+                    <p>Next.js</p>
+                </div>
+
+                <!-- Node.js Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.25s">
+                    <img src="./images/skill-icons/icon-nodejs.svg" alt="nodejs-icon"/>
+                    <p>Node.js</p>
+                </div>
+
+                <!-- Express.js Icon -->
+                <div class="skill-icon express" data-reveal="bottom" data-reveal-delay="0.30s">
+
+                    <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_316_300)">
+                            <path d="M64.1877 49.59C61.8597 50.182 60.4197 49.616 59.1277 47.676L49.9397 34.964L48.6117 33.204L37.8817 47.718C36.6557 49.464 35.3697 50.224 33.0817 49.606L46.8217 31.162L34.0297 14.502C36.2297 14.074 37.7497 14.292 39.0997 16.262L48.6297 29.132L58.2297 16.332C59.4597 14.586 60.7817 13.922 62.9897 14.566L58.0297 21.142L51.3097 29.892C50.5097 30.892 50.6197 31.576 51.3557 32.542L64.1877 49.59ZM0.203744 30.854L1.32774 25.326C4.38774 14.386 16.9277 9.84002 25.5757 16.6C30.6297 20.576 31.8857 26.2 31.6357 32.5H3.14774C2.71974 43.84 10.8817 50.684 21.2877 47.192C24.9377 45.966 27.0877 43.108 28.1637 39.532C28.7097 37.74 29.6137 37.46 31.2977 37.972C30.4377 42.444 28.4977 46.18 24.3977 48.518C18.2717 52.018 9.52774 50.886 4.92774 46.022C2.18774 43.2 1.05574 39.624 0.547744 35.8C0.467744 35.168 0.307744 34.566 0.187744 33.96C0.198411 32.9254 0.203744 31.8907 0.203744 30.856V30.854ZM3.19974 30.094H28.9437C28.7757 21.894 23.6697 16.07 16.6917 16.02C9.03174 15.96 3.53174 21.646 3.19974 30.094Z" fill="black"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_316_300">
+                                <rect width="64" height="64" fill="white" transform="translate(0.187744)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <p>Express.js</p>
+                </div>
+
+                <!-- Nest.js Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.35s">
+                    <img src="./images/skill-icons/icon-nest.svg" alt="nestjs-icon"/>
+                    <p>Nest.js</p>
+                </div>
+
+                <!-- Socket.io Icon -->
+                <div class="skill-icon socket" data-reveal="bottom" data-reveal-delay="0.40s">
+                    
+                    <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_316_308)">
+                            <path d="M64.4879 31.295C64.3139 20.595 58.3479 10.177 49.1179 4.69099C41.8459 0.161987 32.6599 -1.05701 24.3859 1.03299C11.9329 4.16799 2.00488 15.446 0.742881 28.3C-0.825119 40.44 5.31488 53.066 15.8079 59.292C26.0839 65.736 40.0609 65.475 50.1079 58.692C59.1649 52.814 64.7819 42.092 64.4779 31.304L64.4879 31.295ZM34.2699 59.25C19.7269 60.687 5.66288 48.365 5.26988 33.778C4.16988 21.935 11.9749 10.222 23.1219 6.30299C38.7539 0.0329871 57.9559 11.615 59.5669 28.38C62.0929 43.444 49.5529 58.78 34.2699 59.25ZM24.6999 30.38L45.7299 13.18L34.3659 30.423C31.1439 30.423 27.9219 30.424 24.6999 30.38ZM30.6129 33.56L40.2789 33.604L19.2489 50.847L30.6129 33.56Z" fill="#010101"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_316_308">
+                                <rect width="64" height="64" fill="white" transform="translate(0.5)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <p>Socket.io</p>
+                </div>
+
+                <!-- PostgreSQL Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.45s">
+                    <img src="./images/skill-icons/icon-postgresql.svg" alt="postgreSQL-icon"/>
+                    <p>PostgreSQL</p>
+                </div>
+
+                <!-- MongoDB Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.50s">
+                    <img src="./images/skill-icons/icon-mongodb.svg" alt="MongoDB-icon"/>
+                    <p>MongoDB</p>
+                </div>
+
+                <!-- Sass/Scss Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.55s">
+                    <img src="./images/skill-icons/icon-sass.svg" alt="sass-icon"/>
+                    <p>Sass/Scss</p>
+                </div>
+
+                <!-- Tailwind CSS Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.60s">
+                    <img src="./images/skill-icons/icon-tailwindcss.svg" alt="tailwind-icon"/>
+                    <p>Tailwind CSS</p>
+                </div>
+
+                <!-- Figma Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.65s">
+                    <img src="./images/skill-icons/icon-figma.svg" alt="figma-icon"/>
+                    <p>Figma</p>
+                </div>
+
+                <!-- Cypress Icon -->
+                <div class="skill-icon cypress" data-reveal="bottom" data-reveal-delay="0.70s">
+                    
+                    <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_316_340)">
+                            <path d="M1.48928 40.4784C0.734741 37.7306 0.350586 34.8764 0.350586 32.0018C0.350586 18.879 8.59227 6.88003 20.8605 2.14832L22.469 6.31128C11.9088 10.3852 4.81612 20.7086 4.81612 32.0018C4.81612 34.479 5.14536 36.9322 5.79359 39.2963L1.48928 40.4784Z" fill="#58D09E"/>
+                            <path d="M20.6461 2.2505C23.3 1.21286 26.0984 0.532471 28.9573 0.231986C42.0082 -1.13972 54.8029 5.80258 60.7911 17.509L56.8191 19.5438C51.6637 9.46734 40.6554 3.4926 29.4241 4.67306C26.9604 4.93199 24.5551 5.51586 22.2717 6.40766L20.6461 2.2505Z" fill="#58D09E"/>
+                            <path d="M46.9978 55.2685C55.7122 49.7137 60.566 39.8557 59.6642 29.5475C59.3446 25.895 58.3309 22.4066 56.6562 19.1861L60.6132 17.1219C62.5607 20.866 63.7404 24.9148 64.1117 29.1584C65.1594 41.1339 59.5229 52.5821 49.3979 59.0351L46.9978 55.2685Z" fill="black"/>
+                            <path d="M22.8532 25.3992C25.4425 25.3992 27.5518 26.78 28.6357 29.1887L28.7214 29.3772L33.0702 27.9004L32.9777 27.6778C31.2937 23.5764 27.4146 21.0272 22.8532 21.0272C19.6462 21.0272 17.0397 22.0552 14.8858 24.1658C12.7456 26.2627 11.6619 28.901 11.6619 32.0086C11.6619 35.0888 12.7456 37.7134 14.8858 39.8103C17.0397 41.921 19.6462 42.9488 22.8532 42.9488C27.4146 42.9488 31.2937 40.3996 32.9777 36.3018L33.0702 36.0791L28.7145 34.5988L28.6322 34.7942C27.6616 37.1618 25.5009 38.5768 22.8532 38.5768C21.049 38.5768 19.5262 37.9464 18.3189 36.706C17.098 35.4486 16.4806 33.8691 16.4806 32.012C16.4806 30.1412 17.0842 28.5926 18.3189 27.2768C19.5228 26.0298 21.049 25.3992 22.8532 25.3992Z" fill="black"/>
+                            <path d="M50.0921 21.4316L43.8946 37.1138L37.656 21.4316H32.5525L41.3017 42.8358L35.0768 57.932L39.5389 58.8195L54.9144 21.4316H50.0921Z" fill="black"/>
+                            <path d="M35.8751 55.9858L34.7879 58.6173C34.5718 59.1381 34.0779 59.4909 33.5223 59.5149C33.1554 59.5286 32.785 59.5389 32.4111 59.5389C19.6147 59.5321 8.29316 50.5106 5.48763 38.08L1.13184 39.0633C2.70609 46.0358 6.65717 52.3642 12.2579 56.887C17.9239 61.461 25.0611 63.9862 32.3631 64C32.3734 64 32.4282 64 32.4282 64C32.857 64 33.2822 63.9897 33.7075 63.9726C35.9986 63.8766 38.0462 62.441 38.9207 60.3133L40.3406 56.8733L35.8751 55.9858Z" fill="black"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_316_340">
+                                <rect width="64" height="64" fill="white" transform="translate(0.350586)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <p>Cypress</p>
+                </div>
+
+                <!-- Storybook Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.75s">
+                    <img src="./images/skill-icons/icon-storybook.svg" alt="storybook-icon"/>
+                    <p>Storybook</p>
+                </div>
+
+                <!-- Git Icon -->
+                <div class="skill-icon" data-reveal="bottom" data-reveal-delay="0.80s">
+                    <img src="./images/skill-icons/icon-git.svg" alt="git-icon"/>
+                    <p>Git</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+    ---- Services Section
+    =====================================================-->
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <!-- Section Badge -->
+                <p class="badge">
+                    Services
+                </p>
+
+                <!-- Section Subtitle -->
+                <p class="subtitle">
+                    The services I will provide
+                </p>
+            </div>
+
+            <!-- Service Boxes -->
+            <div class="service-boxes">
+                <!-- Service Box 1 -->
+                <div class="service-box" data-reveal="bottom" data-reveal-delay="0.10s">
+                    <!-- Code Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+                    </svg>
+
+                    <h2>Web Development</h2>
+
+                    <p>
+                        Crafting responsive and visually appealing websites tailored to your business needs. 
+                        From landing pages to complex web applications, I ensure a seamless user experience 
+                        across all devices.
+                    </p>
+                </div>
+
+                <!-- Service Box 2 -->
+                <div class="service-box" data-reveal="bottom" data-reveal-delay="0.20s">
+                    <!-- Pencil Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/>
+                    </svg>
+
+                    <h2>UI/UX Design</h2>
+
+                    <p>
+                        Designing intuitive user interfaces with a focus on user experience. I combine aesthetics 
+                        with functionality to create engaging and user-friendly designs that enhance customer 
+                        satisfaction.
+                    </p>
+                </div>
+
+                <!-- Service Box 3 -->
+                <div class="service-box" data-reveal="bottom" data-reveal-delay="0.30s">
+                    <!-- Gauge Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/>
+                    </svg>
+
+                    <h2>Performance Optimization</h2>
+
+                    <p>
+                        Enhancing website performance through code optimization, image compression, and efficient 
+                        loading strategies. I ensure your site runs smoothly, providing users with a fast 
+                        and reliable experience.
+                    </p>
+                </div>
+
+                <!-- Service Box 4 -->
+                <div class="service-box compatibility" data-reveal="bottom" data-reveal-delay="0.40s">
+                    <!-- Desktop Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 224L64 288 64 64l448 0z"/>
+                    </svg>
+
+                    <h2>Browser Compatibility</h2>
+
+                    <p>
+                        Ensuring your website looks and functions perfectly on all major browsers. I test and adjust 
+                        the design to provide a consistent experience, regardless of the browser your users prefer.
+                    </p>
+                </div>
+
+                <!-- Service Box 5 -->
+                <div class="service-box" data-reveal="bottom" data-reveal-delay="0.50s">
+                    <!-- Gears Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8l-.7 0c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                    </svg>
+
+                    <h2>Web Maintenance</h2>
+
+                    <p>
+                        Offering ongoing website maintenance services, including updates, bug fixes, and improvements. 
+                        I help keep your website up-to-date, secure, and performing at its best.
+                    </p>
+                </div>
+
+                <!-- Service Box 6 -->
+                <div class="service-box" data-reveal="bottom" data-reveal-delay="0.60s">
+                    <!-- Toolbox Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M176 88l0 40 160 0 0-40c0-4.4-3.6-8-8-8L184 80c-4.4 0-8 3.6-8 8zm-48 40l0-40c0-30.9 25.1-56 56-56l144 0c30.9 0 56 25.1 56 56l0 40 28.1 0c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9l0 92.1-128 0 0-32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 32-128 0 0-32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 32L0 320l0-92.1c0-12.7 5.1-24.9 14.1-33.9l51.9-51.9c9-9 21.2-14.1 33.9-14.1l28.1 0zM0 416l0-64 128 0c0 17.7 14.3 32 32 32s32-14.3 32-32l128 0c0 17.7 14.3 32 32 32s32-14.3 32-32l128 0 0 64c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64z"/>
+                    </svg>
+
+                    <h2>Integration Services</h2>
+
+                    <p>
+                        Seamlessly integrating third-party services and APIs to enhance your website's functionality. 
+                        Whether it's a payment gateway, social media, or analytics, I ensure smooth and efficient 
+                        integration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+    ---- Work Section
+    =====================================================-->
+
+    <section class="work-section">
+        <div class="container">
+            <div class="section-title">
+                <!-- Section Badge -->
+                <p class="badge">
+                    Works
+                </p>
+
+                <!-- Section Subtitle -->
+                <p class="subtitle">
+                    Some of the noteworthy projects I have built:
+                </p>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="project-cards">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <a id="project-link-one">
+                        <div class="overlay">
+                            <div class="label">
+                                <p id="label-content-one" class="label-content"></p>
+                            </div>
+    
+                            <h4 id="thumbnail-headline-one" class="thumbnail-headline"></h4>
+    
+                            <div class="circle-btn">
+                                <!-- Link Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="project-text">
+                            <p id="project-text-one" class="wow jackInTheBox"></p>
+                        </div>
+    
+                        <img id="project-img-one" alt="image-1"/>
+                    </a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <a id="project-link-two">
+                        <div class="overlay">
+                            <div class="label">
+                                <p id="label-content-two" class="label-content"></p>
+                            </div>
+    
+                            <h4 id="thumbnail-headline-two" class="thumbnail-headline"></h4>
+    
+                            <div class="circle-btn">
+                                <!-- Link Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="project-text">
+                            <p id="project-text-two" class="wow jackInTheBox" data-wow-delay="0.2s"></p>
+                        </div>
+    
+                        <img id="project-img-two" alt="image-2"/>
+                    </a>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <a id="project-link-three">
+                        <div class="overlay">
+                            <div class="label">
+                                <p id="label-content-three" class="label-content"></p>
+                            </div>
+    
+                            <h4 id="thumbnail-headline-three" class="thumbnail-headline"></h4>
+    
+                            <div class="circle-btn">
+                                <!-- Link Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="project-text">
+                            <p id="project-text-three" class="wow jackInTheBox" data-wow-delay="0.4s"></p>
+                        </div>
+    
+                        <img id="project-img-three" alt="image-3"/>
+                    </a>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <a id="project-link-four">
+                        <div class="overlay">
+                            <div class="label">
+                                <p id="label-content-four" class="label-content"></p>
+                            </div>
+    
+                            <h4 id="thumbnail-headline-four" class="thumbnail-headline"></h4>
+    
+                            <div class="circle-btn">
+                                <!-- Link Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="project-text">
+                            <p id="project-text-four" class="wow jackInTheBox"></p>
+                        </div>
+    
+                        <img id="project-img-four" alt="image-4"/>
+                    </a>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card">
+                    <a id="project-link-five">
+                        <div class="overlay">
+                            <div class="label">
+                                <p id="label-content-five" class="label-content"></p>
+                            </div>
+    
+                            <h4 id="thumbnail-headline-five" class="thumbnail-headline"></h4>
+    
+                            <div class="circle-btn">
+                                <!-- Link Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="project-text">
+                            <p id="project-text-five" class="wow jackInTheBox" data-wow-delay="0.2s"></p>
+                        </div>
+    
+                        <img id="project-img-five" alt="image-5"/>
+                    </a>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card">
+                    <a id="project-link-six">
+                        <div class="overlay">
+                            <div class="label">
+                                <p id="label-content-six" class="label-content"></p>
+                            </div>
+    
+                            <h4 id="thumbnail-headline-six" class="thumbnail-headline"></h4>
+    
+                            <div class="circle-btn">
+                                <!-- Link Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="project-text">
+                            <p id="project-text-six" class="wow jackInTheBox" data-wow-delay="0.2s"></p>
+                        </div>
+    
+                        <img id="project-img-six" alt="image-6"/>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+    ---- Testimonials Section
+    =====================================================-->
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <!-- Section Badge -->
+                <p class="badge">
+                    Testimonials
+                </p>
+
+                <!-- Section Subtitle -->
+                <p class="subtitle">
+                    Nice things people have said about me:
+                </p>
+            </div>
+        </div>
+
+        <!-- Testimonial Slider -->
+        <div class="slide-container swiper">
+            <div class="slide-content">
+    
+              <div class="card-wrapper swiper-wrapper">
+    
+                <!-- Card 1 -->
+                <div class="review-card swiper-slide">
+                <!-- Quote Icon -->
+                <img src="./images/testimonial-images/quote-icon.svg" alt="quote-icon"/>
+
+                <p>
+                    I need proper support, plans, rules & regulations for building my startup. Ashfaque is a person who never 
+                    worked with us as a developer but he worked like a good adviser, solution maker, best supporter and good 
+                    companion as well.
+                </p>
+
+                <!-- Stars Icon -->
+                <div class="stars-icon d-flex">
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+                </div>
+
+                <div class="review-details d-flex">
+                    <!-- Card Image -->
+                    <div class="card-image">
+                    <img class="card-img" src="./images/testimonial-images/client1.jpg" alt="image-1"/>
+                    </div>
+
+                    <div class="card-description d-flex flex-column">
+                    <h4>Mahamud Hasan</h4>
+
+                    <p>CEO of ZovoTeam Ltd.</p>
+                    </div>
+                </div>
+                </div>
+      
+                <!-- Card 2 -->
+                <div class="review-card swiper-slide">
+                <!-- Quote Icon -->
+                <img src="./images/testimonial-images/quote-icon.svg" alt="quote-icon"/>
+    
+                <p>
+                    No doubt that Ashfaque is extra-ordinary and multi-talented guy with vast knowledge and skills!
+                    I'm really happy and totally satisfied with his work. He has a good communication skill as well. 
+                    Highly Recommended!
+                </p>
+    
+                <!-- Stars Icon -->
+                <div class="stars-icon d-flex">
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+                </div>
+    
+                <div class="review-details d-flex">
+                    <!-- Card Image -->
+                    <div class="card-image">
+                    <img class="card-img" src="./images/testimonial-images/client2.jpg" alt="image-2"/>
+                    </div>
+    
+                    <div class="card-description d-flex flex-column">
+                    <h4>James Ross</h4>
+    
+                    <p>Executive Director</p>
+                    </div>
+                </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="review-card swiper-slide">
+                <!-- Quote Icon -->
+                <img src="./images/testimonial-images/quote-icon.svg" alt="quote-icon"/>
+    
+                <p>
+                    This was my very first experience with working someone from an Asian country Bangladesh He actually knows 
+                    very well what to do and how to get satisfaction from the client.
+                </p>
+    
+                <!-- Stars Icon -->
+                <div class="stars-icon d-flex">
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+                </div>
+    
+                <div class="review-details d-flex">
+                    <!-- Card Image -->
+                    <div class="card-image">
+                    <img class="card-img" src="./images/testimonial-images/client3.jpg" alt="image-3"/>
+                    </div>
+    
+                    <div class="card-description d-flex flex-column">
+                    <h4>Charles D'costa</h4>
+    
+                    <p>Lead Instructor</p>
+                    </div>
+                </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="review-card swiper-slide">
+                <!-- Quote Icon -->
+                <img src="./images/testimonial-images/quote-icon.svg" alt="quote-icon"/>
+    
+                <p>
+                    I never thought Ashfaque would be able to build an amazing website for my business like this.
+                    Nowadays, to run a digital business, you must need a interactive and responsive 
+                    website. Ashfaque did this job for me to grow my business.
+                </p>
+    
+                <!-- Stars Icon -->
+                <div class="stars-icon d-flex">
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+
+                    <!-- 1 Star Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+                    </svg>
+                </div>
+    
+                <div class="review-details d-flex">
+                    <!-- Card Image -->
+                    <div class="card-image">
+                    <img class="card-img" src="./images/testimonial-images/client4.jpg" alt="image-4"/>
+                    </div>
+    
+                    <div class="card-description d-flex flex-column">
+                    <h4>Billy Simon</h4>
+    
+                    <p>Co-Founder</p>
+                    </div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+    
+            <!-- Slider Buttons & Pagination -->
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!--====================================================
+    ---- Contact Section
+    =====================================================-->
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <!-- Section Badge -->
+                <p class="badge">
+                    Get in touch
+                </p>
+
+                <!-- Section Subtitle -->
+                <p class="subtitle">
+                    What’s next? Feel free to reach out to me if you're looking for a developer, 
+                    have a query, or simply want to connect.
+                </p>
+            </div>
+
+            <div class="contact-info">
+                <!-- Email Section -->
+                <div class="email-section" data-reveal="top">
+                    <!-- Mail Icon -->
+                    <img src="./images/contact-images/mail-icon.svg" alt="mail-icon"/>
+
+                    <!-- Mail Text -->
+                    <a href="mailto:ashfaquehossain300@gmail.com" class="mail-text">ashfaquehossain300@gmail.com</a>
+
+                    <!-- Copy Button -->
+                    <div class="email-btn">
+                        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.6667 10.6665H13.3334C11.8607 10.6665 10.6667 11.8604 10.6667 13.3332V26.6665C10.6667 28.1393 11.8607 29.3332 13.3334 29.3332H26.6667C28.1395 29.3332 29.3334 28.1393 29.3334 26.6665V13.3332C29.3334 11.8604 28.1395 10.6665 26.6667 10.6665Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.33341 21.3332C3.86675 21.3332 2.66675 20.1332 2.66675 18.6665V5.33317C2.66675 3.8665 3.86675 2.6665 5.33341 2.6665H18.6667C20.1334 2.6665 21.3334 3.8665 21.3334 5.33317" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            
+                <!-- Cell Section -->
+                <div class="cell-section" data-reveal="top" data-reveal-delay="0.10s">
+                    <!-- Cell Icon -->
+                    <img src="./images/contact-images/cell-icon.svg" alt="cell-icon"/>
+
+                    <!-- Cell Text -->
+                    <a href="tel:+8801577073020" class="cell-text">+880-1577073020</a>
+
+                    <!-- Copy Button -->
+                    <div class="cell-btn">
+                        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.6667 10.6665H13.3334C11.8607 10.6665 10.6667 11.8604 10.6667 13.3332V26.6665C10.6667 28.1393 11.8607 29.3332 13.3334 29.3332H26.6667C28.1395 29.3332 29.3334 28.1393 29.3334 26.6665V13.3332C29.3334 11.8604 28.1395 10.6665 26.6667 10.6665Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.33341 21.3332C3.86675 21.3332 2.66675 20.1332 2.66675 18.6665V5.33317C2.66675 3.8665 3.86675 2.6665 5.33341 2.6665H18.6667C20.1334 2.6665 21.3334 3.8665 21.3334 5.33317" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <p class="social-text" data-reveal="top" data-reveal-delay="0.20s">
+                    You may also find me on these platforms!
+                </p>
+
+                <div class="contact-icons" data-reveal="top" data-reveal-delay="0.30s">
+                    <!-- Github Icon -->
+                    <a href="https://github.com/ashfaquehossainabir" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 28V24C21.1392 22.7473 20.78 21.4901 20 20.5C23 20.5 26 18.5 26 15C26.08 13.75 25.73 12.52 25 11.5C25.28 10.35 25.28 9.15 25 8C25 8 24 8 22 9.5C19.36 9 16.64 9 14 9.5C12 8 11 8 11 8C10.7 9.15 10.7 10.35 11 11.5C10.2719 12.5159 9.91851 13.7528 10 15C10 18.5 13 20.5 16 20.5C15.61 20.99 15.32 21.55 15.15 22.15C14.98 22.75 14.93 23.38 15 24V28" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 24C10.49 26 10 22 8 22" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                    <!-- Twitter Icon -->
+                    <a href="https://x.com/Ashfaquertc70" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28 10C28 10 27.3 12.1 26 13.4C27.6 23.4 16.6 30.7 8 25C10.2 25.1 12.4 24.4 14 23C9 21.5 6.5 15.6 9 11C11.2 13.6 14.6 15.1 18 15C17.1 10.8 22 8.4 25 11.2C26.1 11.2 28 10 28 10Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                    <!-- Figma Icon -->
+                    <a href="https://www.figma.com/@ashfaquehossain" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 11.5C11 10.5717 11.3687 9.6815 12.0251 9.02513C12.6815 8.36875 13.5717 8 14.5 8H18V15H14.5C13.5717 15 12.6815 14.6313 12.0251 13.9749C11.3687 13.3185 11 12.4283 11 11.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 8H21.5C21.9596 8 22.4148 8.09053 22.8394 8.26642C23.264 8.44231 23.6499 8.70012 23.9749 9.02513C24.2999 9.35013 24.5577 9.73597 24.7336 10.1606C24.9095 10.5852 25 11.0404 25 11.5C25 11.9596 24.9095 12.4148 24.7336 12.8394C24.5577 13.264 24.2999 13.6499 23.9749 13.9749C23.6499 14.2999 23.264 14.5577 22.8394 14.7336C22.4148 14.9095 21.9596 15 21.5 15H18V8Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 18.5C18 18.0404 18.0905 17.5852 18.2664 17.1606C18.4423 16.736 18.7001 16.3501 19.0251 16.0251C19.3501 15.7001 19.736 15.4423 20.1606 15.2664C20.5852 15.0905 21.0404 15 21.5 15C21.9596 15 22.4148 15.0905 22.8394 15.2664C23.264 15.4423 23.6499 15.7001 23.9749 16.0251C24.2999 16.3501 24.5577 16.736 24.7336 17.1606C24.9095 17.5852 25 18.0404 25 18.5C25 18.9596 24.9095 19.4148 24.7336 19.8394C24.5577 20.264 24.2999 20.6499 23.9749 20.9749C23.6499 21.2999 23.264 21.5577 22.8394 21.7336C22.4148 21.9095 21.9596 22 21.5 22C21.0404 22 20.5852 21.9095 20.1606 21.7336C19.736 21.5577 19.3501 21.2999 19.0251 20.9749C18.7001 20.6499 18.4423 20.264 18.2664 19.8394C18.0905 19.4148 18 18.9596 18 18.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11 25.5C11 24.5717 11.3687 23.6815 12.0251 23.0251C12.6815 22.3687 13.5717 22 14.5 22H18V25.5C18 26.4283 17.6313 27.3185 16.9749 27.9749C16.3185 28.6313 15.4283 29 14.5 29C13.5717 29 12.6815 28.6313 12.0251 27.9749C11.3687 27.3185 11 26.4283 11 25.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11 18.5C11 17.5717 11.3687 16.6815 12.0251 16.0251C12.6815 15.3687 13.5717 15 14.5 15H18V22H14.5C13.5717 22 12.6815 21.6313 12.0251 20.9749C11.3687 20.3185 11 19.4283 11 18.5Z" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+    ---- Footer Section
+    =====================================================-->
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">
+                &#169; <span id="year"></span> | Designed and coded with ❤️️ by Ashfaque Hossain Abir
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- ====================================| Javascript Sources |===================================== -->
+
+    <!-- Wow JS -->
+    <script src="./js/wow.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Scroll Reveal JS -->
+    <script src="./js/on-scroll-reveal.js"></script>
+    <script src="./js/scrollreveal.js"></script>
+
+    <!-- Typed JS -->
+    <script src="js/typed.min.js"></script>
+
+    <!-- JS Source -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
